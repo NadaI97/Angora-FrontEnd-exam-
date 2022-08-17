@@ -1,0 +1,521 @@
+.navbar{
+
+position:fixed;
+z-index: 99999999999999999;
+
+padding-top: 20px;
+
+}
+
+
+.oldNav{
+
+    background-color: transparent;
+}
+
+.newNav{
+
+    background-color: black;
+}
+
+.navbar-light .navbar-nav .nav-link{
+
+    font-family: Poppins, sans-serif;    
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 600;
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+
+    color: #f25454;
+}
+
+.gears{
+
+    position: fixed;
+    z-index: 999999999999;
+    height: 40px;
+    width: 40px;
+    background-color: #434343;
+    top: 20%;
+    left: 0;
+    border: 5px white;
+    text-align: center;
+}
+
+.gears i{
+
+    size: 14px;
+    height: 25px;
+    color:#FDFDFD;
+   padding-top: 30%;
+    
+}
+
+.gears:hover{
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.first-slide{
+
+    background-image: url(../images/slideshow-1.jpg);
+
+
+}
+
+.second-slide{
+
+    background-image: url(../images/slideshow-2.jpg);
+    
+}
+
+.third-slide{
+
+    background-image: url(../images/slideshow-3.jpg);
+    
+}
+
+.first-slide , .second-slide , .third-slide{
+
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.first-slide h1, .second-slide h1, .third-slide h1{
+
+    font-family: Poppins, sans-serif;    
+    text-align: center;
+    color: #ffffff;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+    
+}
+
+.mouse{
+
+    z-index: 9999;
+    height: 40px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 40%;
+    top: 90%;
+    left:50%;
+    background-color: transparent;
+    
+
+}
+
+.mouseCir{
+
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: 30%;
+    background-color: white;
+    animation: dot 2s infinite;
+}
+
+.mouse:hover{
+
+  border-color: #f25454;
+}
+
+.mouse:hover .mouseCir{
+
+    background-color: #f25454;
+    border-color: #f25454;
+
+}
+
+@keyframes dot{
+
+    0%{top: 0%; opacity: 1; }
+    25% {top: 25%; opacity: 0.5;}
+    50%{top: 50%; opacity: 0;}
+    100% {top: 75%; opacity: 0;}
+}
+
+#home .carousel-control-next , #home .carousel-control-prev
+{
+    left: 0;
+    
+    width: unset;
+    bottom: unset;
+    
+    
+    position: unset;    
+    border: solid white 1px;
+    
+    
+}
+
+.homeBtn{
+
+    z-index: 50;
+    transition: 0.3s all ease-in;
+
+}
+
+.line
+{
+    height: 1px;
+    background-color: black;
+    width: 40px; 
+    transition: 0.5s all;
+}
+
+.aboutSec:hover .line
+{
+    width: 60px;
+    
+}
+
+.progress
+{
+    height: 4px;
+    margin: 0.5rem 0;
+}
+
+.progress-bar{
+    background-color: #ED5252;
+}
+
+.aboutP p{
+
+    font-family: Open Sans, sans-serif;  
+    color: #666666;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.aboutCon{
+
+    font-family: Open Sans, sans-serif;  
+    color: #999999;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+
+}
+
+.textShadow h1{
+
+    font-family: Open Sans, sans-serif;  
+    color: #282828;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+}
+
+.textShadow h2{
+
+    font-family: Open Sans, sans-serif;    
+    color: #282828;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+}
+
+.textShadow h1{
+
+    font-family: Open Sans, sans-serif;  
+    color: #F2F2F2;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 700;
+}
+
+.ourMemImg{
+
+    overflow: hidden;
+
+}
+.ourMemImg img{
+
+    transition: 0.5s all;
+}
+.OurMemImgCap {
+
+    width: 100%;
+    top:0;
+    bottom: 0;
+    background-color: rgba(242, 84, 84, 0.85);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: 0.5s all;
+
+}
+
+
+.OurMemImgCap ul{
+
+    text-decoration: none;
+    list-style-type: none;
+    top: 50%;
+    left:45%;
+
+    
+}
+
+.OurMemImgCap ul a{
+color: white;
+
+    
+}
+
+.description p{
+   
+    color: #666666;
+    font-family: Open Sans, sans-serif;    
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.description h5{
+
+    font-family: Poppins, sans-serif;    
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    transition: 0.5s all;
+}
+
+.OurTeamMem:hover .OurMemImgCap{
+
+    opacity: 1;
+
+
+}
+
+.OurTeamMem:hover .description h5{
+
+    color: rgba(242, 84, 84, 0.85);
+
+}
+
+.OurTeamMem:hover img{
+
+transform: scale(1.1);
+
+
+}
+
+.contactUs p{
+
+    font-family: Poppins, sans-serif;    
+    color: black;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+
+.contactUs .btn{
+background-color: #F25454;
+    padding: 15px 20px;
+}
+
+.contactUs .btn:hover{
+
+    background-color: rgba(242, 70, 84, 0.85);
+    }
+    
+.servises{
+
+    background-color: #FAFAFA;
+}
+
+.serI{
+
+color: #f25454;
+font-size: 18px;
+}
+
+.servMem span{
+   
+    font-family: Poppins, sans-serif;    
+    color: black;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+
+}
+
+.servMem p{
+
+    color: #666666;
+    font-family: Open Sans, sans-serif;    
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding: 0 45px;
+}
+
+.servMem{
+
+    margin: 20px 0;
+    
+}
+
+.servMem span{
+    transition: 0.3s all ease-in;
+
+}
+.clients img{
+
+width: 100px;
+height: 100px;
+border-radius: 50%;    
+}
+
+.GITI{
+
+    color: #f25454;
+}
+
+
+.myForm{
+
+    border: #F25454 2px;
+}
+
+.form-control{
+
+    transition: box-shadow none;
+}
+
+.myBtn{
+
+    background-color: #f25454;
+    border-color: #f25454;
+    
+}
+
+.ending{
+
+    background:#222222;
+    
+    background-image: url(../images/dotted-map.png);
+
+    background-position: center center;
+    
+
+
+}
+
+.endBtn{
+
+    border: 1px solid;
+    margin: 5px;
+}
+
+.endMem h4{
+    
+    font-family: Poppins, sans-serif;    
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+
+}
+
+.endMem h6{
+
+    font-family: Poppins, sans-serif;    
+    font-size: 14px;
+    
+    font-weight: 400;
+    color: #b0b0b0;
+    padding: 0;
+    transition: 0.3s all ease-in;
+}
+
+.endMem button{
+
+    font-family: Poppins, sans-serif;    
+    font-size: 13px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #b0b0b0;
+    border-radius: 10%;
+    transition: 0.3s all ease-in;
+}
+
+.endMem button:hover{
+
+    
+    border-color: #E53A2C;
+   color:#E53A2C;
+}
+
+.endMem h6:hover{
+
+    color:#E53A2C;
+}
+
+.servMem span:hover{
+
+    color:#E53A2C;
+
+}
+
+.copyRight{
+
+    background-color: #1A1A1A;
+}
+
+.cRMem{
+
+    padding-top: 50px;
+    padding-bottom: 0;
+    padding-left: 50px;
+}
+
+.cRMem i{
+
+
+    color: white;
+    transition: 0.3s all ease-in;
+
+}
+
+.cRMem ul li{
+
+    text-decoration: none;
+    list-style: none;
+}
+
+.cRMem i:hover{
+
+    color:#E53A2C;
+}
+
+.cRMem p{
+    color: #b0b0b0;
+}
+.cRMem span{
+    transition: 0.3s all ease-in;
+
+}
+.cRMem span:hover{
+
+    color:#E53A2C;
+}
+
+.nav-tabs{
+
+    border: none;
+}
